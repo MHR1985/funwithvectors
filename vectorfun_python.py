@@ -15,7 +15,6 @@ def mag(vec):
     y= vec[1]
     mag = math.sqrt(x*x+y*y)
     return mag
-mag(np.array([2,2]))
 
 #t)
 
