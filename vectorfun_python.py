@@ -8,12 +8,16 @@ Created on Mon Mar  1 13:15:05 2021
 import numpy as np
 import math
 
+#s)
+
 def mag(vec):
     x = vec[0]
     y= vec[1]
     mag = math.sqrt(x*x+y*y)
     return mag
 mag(np.array([2,2]))
+
+#t)
 
 def unit(vec):
     x = vec[0]
@@ -23,33 +27,33 @@ def unit(vec):
     array = np.array([unit_x,unit_y])
     return array;  
 
+#u)
+
 def rot90(vec):
     x = vec[0]
     y= vec[1] 
     array= np.array([-y,x])
     return array;
 
-rot90([7,2])
-
 a = np.array([3,2])
 b = np.array([8,7])
 c = np.array([1,5])
 
-print("2*a")
+print("v) 2*a")
 print(2*a)
 print()
-print("a+b-c")
+print("w) a+b-c")
 print(a+b-c)
 print()
-print("a*a")
+print("y) a*a")
 print(np.dot(a,a))
 print()
 print("mag(a)*mag(a)")
 print(mag(a)*mag(a))
 print()
-print("a*b")
+print("z) a*b")
 print(np.dot(a,b))
 print()
-print("a*ar")
+print("æ) a*ar")
 print(np.dot(a,rot90(a)))
         
